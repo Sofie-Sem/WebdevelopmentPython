@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../static/styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{film}}</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav">
+        <li><a class="active" href="http://127.0.0.1:5000/webshop"> Home </a></li>
+        <li><a href="http://127.0.0.1:5000/webshop/fantasy"> Fantasy </a></li>
+        <li><a href="http://127.0.0.1:5000/webshop/sci-fi"> Sci-Fi </a></li>
+      </ul>
+    </nav>
+    <div class="info1">
+      <h1>{{film}}</h1>
+      <h3>{{info}}</h3>
+    </div>
+    <table class="info">
+      <tr>
+        <th>Website</th>
+        <th>prijs</th>
+        <th>Genre</th>
+      </tr>
+      <tr>
+        <td>Bol.com</td>
+        <td>€{{prijs}}</td>
+        <td>{{genre}}</td>
+      </tr>
+    </table>
+    <a class="bestel" href="/webshop/bestelpagina/{{film}}/">Bestellen</a>
+  </body>
+</html>

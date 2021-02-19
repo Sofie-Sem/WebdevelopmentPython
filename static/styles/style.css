@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  color: black;
+  background-color: #BAACA1;
+  font-family: monospace;
+}
+
+ul.nav {
+  list-style-type: none;
+  width: 15vw;
+  background-color: #767676;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+ul.nav li a {
+  display: block;
+  color: white;
+  font-size: 2.3vh;
+  padding: 2vh 1.5vw;
+  text-decoration: none;
+}
+
+ul.nav li a.active {
+  background-color: #7395AE;
+  color: white;
+}
+
+ul.nav li a:hover:not(.active) {
+  background-color: #5D5C61;
+  color: white;
+}
+
+div {
+  margin-left: 15vw;
+  padding: 4vh 4vw;
+}
+div.top5 li a{
+  text-decoration: none;
+  color: black;
+  font-size: 2.5vh;
+  padding-left: 1vw;
+}
+div.top5 li a:hover{
+  text-decoration: none;
+  color: #557A95;
+}
+.info{
+  border-collapse: collapse;
+  width: 85vw;
+  margin-left: 15vw;
+}
+.info1{
+  margin-left: 15vw;
+  /* background-color: black */
+}
+.info th, td{
+  padding: 1vw;
+  text-align: left;
+  border-bottom: 0.4vh solid black;
+}
+div.img img{
+  height: auto;
+  width: 85vw;
+  position: fixed;
+}
+
+
+.films{
+  margin-left: 30vw;
+}
+.bestel{
+  background-color: #5D5C61;
+  border: none;
+  color: white;
+  padding: 2vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /* font-size: 16px; */
+  margin: 2vw;
+  /* cursor: pointer; */
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.bestel:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+@media screen and (max-width: 900px) {
+  ul.nav {
+    width: 100vw;
+    height: auto;
+    position: relative;
+  }
+
+  ul.nav li a {
+    float: left;
+    padding: 2vh 6vw;
+  }
+
+  div{
+    margin-left: 0;
+  }
+  div.img img{
+    height: auto;
+    position: fixed;
+  }
+
+}
+/* .films{
+  margin-left: 0vw;
+} */
+/* .info{
+  margin-left: 0vw;
+}
+.info1{
+  margin-left: 0vw;
+} */
+
+
+
+@media screen and (max-width: 400px) {
+  ul.nav li a {
+    text-align: center;
+    float: none;
+  }
+  div.img img{
+    height: auto;
+    position: fixed;
+  }
+}

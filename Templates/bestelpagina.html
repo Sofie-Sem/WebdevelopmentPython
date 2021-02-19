@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../static/styles/formstyle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+  <body>
+    <h1>Log In</h1>
+    <form  action="" method="post">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.username.label }}<br>
+            {{ form.username(size=32) }}
+            {% for error in form.username.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+        <div>
+          <br>
+            {{ form.straat.label }}<br>
+            {{ form.straat(size=32) }}
+            {% for error in form.straat.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+        <div>
+          <br>
+            {{ form.huisnummer.label }}<br>
+            {{ form.huisnummer(size=32) }}
+            {% for error in form.huisnummer.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+        <div>
+          <br>
+            {{ form.postcode.label }}<br>
+            {{ form.postcode(size=32) }}
+            {% for error in form.postcode.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+        <div>
+          <br>
+            {{ form.woonplaats.label }}<br>
+            {{ form.woonplaats(size=32) }}
+            {% for error in form.woonplaats.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+        <div>
+          <br>
+            {{ form.land.label }}<br>
+            {{ form.land(size=32) }}
+            {% for error in form.land.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+        <div>
+          <br>
+            {{ form.telefoonnummer.label }}<br>
+            {{ form.telefoonnummer(size=32) }}
+            {% for error in form.telefoonnummer.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+        <div>
+          <br>
+            {{ form.bezorgen.label }}<br>
+            {{ form.bezorgen(size=32) }}
+            {% for error in form.bezorgen.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+        <br>
+        <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
+        <p>{{ form.submit() }}</p>
+    </form>
+
+  </body>
+</html>

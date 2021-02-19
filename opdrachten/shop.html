@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Shop</title>
+  </head>
+  <body>
+    <h1>Webshop</h1>
+    <h3>Welkom {{naam}}</h3>
+    <p>	Jij krijgt
+      {% if naam == 'sofie' %}
+        10% korting
+      {% else %}
+        geen korting
+      {% endif %}
+    </p>
+
+
+
+  </body>
+</html>

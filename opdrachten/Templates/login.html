@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    {% if title %}
+      <title>{{title}}</title>
+    {% else %}
+      <title>Welkom</title>
+    {% endif %}
+  </head>
+  <body>
+    <body>
+     <div> Menu:
+       <a href="/posts">Home</a>
+       <a href="/login">Login</a>
+     </div>
+     <hr>
+     <div>Coderclass Bookshop </div>
+     {% block content %}{% endblock %}
+   </body>
+</html>

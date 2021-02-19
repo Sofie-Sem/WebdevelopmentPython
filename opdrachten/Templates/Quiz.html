@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../opmaak.css">
+    <title></title>
+  </head>
+  <body>
+    <form class="" action="/verwerkFormulier" method="post">
+      <div>
+        <label for="lievelingskleur">Wat is je lievelingskleur: </label>
+        <br>
+        <input type="text" name="lievelingskleur" id="lievelingskleur">
+      </div>
+      <div>
+        <p>Wat is een primaire kleur:</p>
+        <input type="radio" id="groen" name="primaire" value="Groen">
+        <label for="Groen">Groen</label><br>
+        <input type="radio" id="Geel" name="primaire" value="Geel">
+        <label for="Geel">Geel</label><br>
+        <input type="radio" id="paars" name="primaire" value="paars">
+        <label for="paars">Paars</label><br>
+      </div>
+      <div>
+        <p>Welke kleuren zitten in de nederlandse vlag: </p>
+        <input type="checkbox" name="kleur1" id="kleur1" value="Groen">
+        <label for="kleur1">Groen</label><br>
+        <input type="checkbox" name="kleur2" id="kleur2" value="Blauw">
+        <label for="kleur2">Blauw</label><br>
+        <input type="checkbox" name="kleur3" id="kleur3" value="Paars">
+        <label for="kleur3">Paars</label><br>
+        <input type="checkbox" name="kleur4" id="kleur4" value="Rood">
+        <label for="kleur4">Rood</label><br>
+        <input type="checkbox" name="kleur5" id="kleur5" value="Wit">
+        <label for="kleur5">Wit</label><br>
+      </div>
+
+      <div>
+        <br>
+        <label for="mening">Is wit een kleur? Geef uitleg waarom je dit denkt.</label>
+        <textarea name="mening" id="mening" rows="2" cols="40"></textarea>
+      </div>
+      <div>
+        <br>
+        <input type="button" value="Verzend Bericht">
+      </div>
+    </form>
+
+    {% block content %}{% endblock %}
+  </body>
+</html>

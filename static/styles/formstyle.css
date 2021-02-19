@@ -1,0 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    color: black;
+    background-color: #BAACA1;
+    font-family: monospace;
+}
